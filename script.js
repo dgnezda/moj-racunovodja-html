@@ -1,5 +1,6 @@
 //localStorage.clear();
 
+
 let date = new Date().toJSON().slice(0, 10);
 let dateFormat = date.slice(8, 10) + "." + date.slice(5, 7) + "." + date.slice(0, 4);
 let datumStoritve = document.getElementById("datum-storitve-racun");
@@ -8,7 +9,7 @@ let datumIzdaje = document.getElementById("datum-izdaje-racun");
 datumStoritve.value = dateFormat;
 datumIzdaje.value = dateFormat;
 
-
+/*
 function submitForm() {
     // SHRANI PODATKE O IZDAJATELJU
     localStorage.setItem("naziv-izdajatelja", document.getElementById("naziv-izdajatelja").value);
@@ -27,7 +28,7 @@ function submitForm() {
     localStorage.setItem('logotip-izdajatelja', logotipURL); 
     const podpis = document.getElementById('podpis-izdajatelja');
     const podpisURL = window.URL.createObjectURL(podpis)
-    localStorage.setItem('podpis-izdajatelja', podpisURL); */
+    localStorage.setItem('podpis-izdajatelja', podpisURL); --
 
     // SHRANI PODATKE O PREJEMNIKU
     localStorage.setItem("naziv-prejemnika", document.getElementById("naziv-prejemnika").value);
@@ -48,4 +49,4 @@ function submitForm() {
     localStorage.setItem("zacetni-text-racun", document.getElementById("zacetni-text-racun").value);
     localStorage.setItem("zakljucni-text-racun", document.getElementById("zakljucni-text-racun").value);
     localStorage.setItem("vpis-mziks-racun", document.getElementById("vpis-mziks-racun").value);
-  }
+  }*/
