@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/template.css">
+    <title>Racun</title>
+</head>
+<body>
+    <div id="a4-format">
+        <header>
+            <img src="./img/test-logo.png" id="logotip-izdajatelja-tmp" alt="">
+            <h1 id="title"></h1>
+        </header>
+
+        <div id="podatki-izdajatelj-tmp">
+            <strong>Podatki o izdajatelju:</strong>
+            <p id="naziv-izdajatelja-tmp"></p>
+            <p id="ulica-izdajatelja-tmp"></p>
+            <p id="postna-izdajatelja-tmp"></p>
+            <p id="mesto-izdajatelja-tmp"></p><br>
+            <p id="davcna-izdajatelja-tmp"></p>
+            <p id="maticna-izdajatelja-tmp"></p>
+            <p id="trr-izdajatelja-tmp"></p>
+            <p id="banka-izdajatelja-tmp"></p>
+            <p id="bic-izdajatelja-tmp"></p>
+        </div>
+
+        <div id="podatki-prejemnik-tmp">
+            <strong>Podatki o prejemniku:</strong>
+            <p id="naziv-prejemnika-tmp"></p>
+            <p id="ulica-prejemnika-tmp"></p>
+            <p id="postna-prejemnika-tmp"></p>
+            <p id="mesto-prejemnika-tmp"></p><br>
+            <p id="davcna-prejemnika-tmp"></p>
+            <p id="maticna-prejemnika-tmp"></p>
+        </div>
+
+        <div id="podatki-racun-1">
+            <strong>Podatki o računu</strong>
+            <p id="stevilka-racun-tmp"></p>
+            <p id="datum-storitve-racun-tmp"></p>
+            <p id="datum-izdaje-racun-tmp"></p>
+            <p id="kolicina-racun-tmp"></p>
+            <p class="znesek" id="znesek-racun-tmp"></p>
+            <p id="opis-racun-tmp"></p>
+        </div>
+
+        <div id="zacetni-text-tmp">
+            <p id="zacetni-text-racun-tmp"></p>
+        </div>
+
+        <div id="podatki-racun-2">
+            <table id="povzetek-racuna">
+                <tr>
+                    <th>Opis storitve</th>
+                    <th>Količina</th>
+                    <th>EM</th>
+                    <th>Cena/EM</th>
+                    <th>Popust</th>
+                    <th>DDV</th>
+                    <th>Vrednost z DDV</th>
+                </tr>
+
+                <tr>
+                    <td id="opis-tmp"></td>
+                    <td>1</td>
+                    <td>kos</td>
+                    <td id="cena-tmp"></td>
+                    <td>0%</td>
+                    <td>0%</td>
+                    <td id="vrednost-tmp"></td>
+                </tr>
+            </table>
+            <br>
+            <p id="zakljucni-text-racun-tmp"></p>
+        </div>
+
+        <div id="prazen">
+            <!-- Prazen div! -->
+        </div>
+
+        <div id="podatki-racun-3">
+            <table id="povzetek-racuna-1">
+                <tr>
+                    <th>Vrednost postavk:</th>
+                    <td id="znesek-1"></td>
+                </tr>
+                <tr>
+                    <th>Vsota popustov:</th>
+                    <td>0,00€</td>
+                </tr>
+                <tr>
+                    <th>Osnova za DDV:</th>
+                    <td>0,00€</td>
+                </tr>
+                <tr>
+                    <th>Neobdavčeno:</th>
+                    <td id="znesek-2"></td>
+                </tr>
+                <tr>
+                    <th>Vsota zneskov:</th>
+                    <td>DDV: 0,00€</td>
+                </tr>
+                <tr>
+                    <th id="za-placilo"><u>ZA PLAČILO:</u></th>
+                    <td id="znesek-3"></td>
+                </tr>
+                
+            </table>
+        </div>
+
+        <div id="podpis">
+            Podpis:<br><br>
+            <img src="./img/podpis.gif" id="podpis-izdajatelja-tmp" alt="">
+            <p id="path"></p>
+            <p id="vpis-mziks-racun-tmp"></p>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="./template.js"></script>
+</body>
+</html>

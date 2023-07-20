@@ -1,0 +1,112 @@
+body {
+    font-size: 10px;
+    background-color: white;
+    font-family: 'Victor Mono', monospace;
+}
+
+#a4-format {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: 50px 170px 110px 60px 100px 130px 120px;
+    gap: 10px;
+
+    margin: 10px;
+    width: 595px;
+    height: 842px;
+    /*border: 1px solid #2F5D5E;*/
+}
+
+#a4-format div, #a4-format header {
+    padding: 10px;
+    border: 1px dotted #28C7C9;
+    border-radius: 3px;
+}
+
+header {
+    grid-column: 1 / span 7;
+    text-align: center;
+    font-size: 1rem;
+}
+
+h1 {
+    display: inline;
+    margin: 20px auto 5px auto;
+    font-size: 1.5rem;
+}
+
+header img {
+    float: left;
+    left: 10px;
+    top: 10px;
+    height: 30px;
+}
+
+#podatki-izdajatelj-tmp {
+    grid-column: 1 / span 4;
+    background-color: #CAFFFF;
+} 
+
+#podatki-prejemnik-tmp {
+    grid-column: 5 / span 3;
+    background-color: #CAFFFF;
+}
+
+#podatki-racun-1 {
+    grid-column: 1 / span 7;
+    align-content: center;
+    align-items: center;
+    background-color: #CAFFFF;
+}
+
+#podatki-racun-2 {
+    grid-column: 1 / span 7;
+    background-color: #CAFFFF;
+}
+
+#zacetni-text-tmp {
+    grid-column: 1 / span 7;
+    background-color: #CAFFFF;
+}
+
+#prazen {
+    grid-column: 1 / span 4;
+    border: 0px solid white;
+}
+
+#podatki-racun-3 {
+    grid-column: 5 / span 3;
+    background-color: #7DFFFF;
+}
+
+#podpis {
+    grid-column: 1 / span 7;
+}
+
+p {
+    line-height: 0.1rem;
+    margin: 10px
+}
+
+#povzetek-racuna {
+    width: 100%;
+    text-align: center;
+}
+
+#povzetek-racuna-1 th {
+    text-align: right;
+}
+
+#podpis-izdajatelja-tmp {
+    max-height: 40px;
+} 
+
+#zacetni-text-racun-tmp {
+    /*margin: 10px;*/
+    word-break: normal;
+    white-space: normal;
+    line-height: 1rem;
+}
+
+#za-placilo, #znesek-3 {
+    font-size: 0.8rem;
+}

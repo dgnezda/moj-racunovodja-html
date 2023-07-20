@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&family=Poiret+One&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Moj računovodja</title>
+</head>
+<body>
+    <header id="menu">
+        <ul>
+            <li>
+                <h1><img id="logo" src="./img/ikona.png" alt="Logo"> Moj računovodja</h1>
+            </li>
+            <li>Prijava</li>
+            <li>Vnos računa</li>
+            <li>Knjiga računov</li>
+        </ul>
+        <h2>Spletna aplikacija za vodenje bilance, izdajo računov v .pdf formatu in izvoz knjige računov v .xls 
+            formatu.</h2>
+    </header>
+    <main id="form">
+        <form action="/vnosPodatkov.js">
+            <div id="podatki-izdajatelj">
+                <h3>Podatki o izdajatelju računa</h3>
+                <label for="naziv-izdajatelja">Naziv</label>
+                <input type="text" name="izdajatelj" id="naziv-izdajatelja" value="Ime Priimek" required><br>
+                <label for="ulica-izdajatelja">Ulica in hišna številka</label>
+                <input type="text" name="izdajatelj" id="ulica-izdajatelja" value="Ulicna 12" required><br>
+                <label for="postna-izdajatelja">Poštna številka</label>
+                <input type="text" name="izdajatelj" id="postna-izdajatelja" value="1234" required><br>
+                <label for="mesto-izdajatelja">Mesto</label>
+                <input type="text" name="izdajatelj" id="mesto-izdajatelja" value="Imejkovci" required><br>
+                <label for="davcna-izdajatelja">DŠ</label>
+                <input type="text" name="izdajatelj" id="davcna-izdajatelja" value="12345567" required><br>
+                <label for="maticna-izdajatelja">MŠ</label>
+                <input type="text" name="izdajatelj" id="maticna-izdajatelja" value="SI12343123"><br>
+                <label for="trr-izdajatelja">TRR</label>
+                <input type="text" name="izdajatelj" id="trr-izdajatelja" value="SI56 1325 1234 4532 234" required><br>
+                <label for="banka-izdajatelja">Banka</label>
+                <input type="text" name="izdajatelj" id="banka-izdajatelja" value="NLB" required><br>
+                <label for="bic-izdajatelja">SWIFT/BIC</label>
+                <input type="text" name="izdajatelj" id="bic-izdajatelja" value="LJBASIXX" required><br>
+                <label for="logotip-izdajatelja">Naloži logotip:</label>
+                <input type="file" id="logotip-izdajatelja" name="logotip" accept=".png,.jpg,.gif,.jpeg"><br>
+                <label for="podpis-izdajatelja">Naloži podpis:</label>
+                <input type="file" id="podpis-izdajatelja" name="podpis" accept=".png,.jpg,.gif,.jpeg">
+                <p>(png, jpg, gif, jpeg; max 200 x 200 px)</p>
+            </div>
+            <div id="podatki-prejemnik">
+                <h3>Podatki o prejemniku računa</h3>
+                <label for="naziv-prejemnika">Naziv</label>
+                <input type="text" id="naziv-prejemnika" name="Prejemnik" value="Ime Priimek 2" required><br>
+                <label for="ulica-prejemnika">Ulica in hišna številka</label>
+                <input type="text" id="ulica-prejemnika" name="Prejemnik" value="Priimkova 32" required><br>
+                <label for="postna-prejemnika">Poštna številka</label>
+                <input type="text" id="postna-prejemnika" name="Prejemnik" value="4321" required><br>
+                <label for="mesto-prejemnika">Mesto</label>
+                <input type="text" id="mesto-prejemnika" name="Prejemnik" value="Inkovci" required><br>
+                <label for="davcna-prejemnika">DŠ</label>
+                <input type="text" id="davcna-prejemnika" name="Prejemnik" value="12312344" required><br>
+                <label for="maticna-prejemnika">MŠ</label>
+                <input type="text" id="maticna-prejemnika" name="Prejemnik" value="/">
+            </div>
+            <div id="podatki-racun">
+                <h3>Podatki o računu</h3>
+                <label for="stevilka-racun">Številka računa</label>
+                <input type="text" name="Racun" id="stevilka-racun" value="IP-0023" required><br>
+                <label for="datum-storitve-racun">Datum storitve</label>
+                <input type="text" name="Racun" id="datum-storitve-racun" required><br>
+                <label for="datum-izdaje-racun">Datum izdaje računa</label>
+                <input type="text" name="Racun" id="datum-izdaje-racun" required><br>
+                <label for="kolicina-racun">Količina</label>
+                <input type="number" name="Racun" id="kolicina-racun" value="1" required><br>
+                <label for="znesek-racun">Znesek / Cena enote v EUR</label>
+                <input type="number" name="Racun" id="znesek-racun" value="123,44" required><br> <!-- KONVERTIRAJ V FLOAT Z 2 DECIMALKAMA!!! -->
+                <label for="opis-racun">Opis storitve</label>
+                <input type="text" name="Racun" id="opis-racun" value="Delo na crno" required><br>
+            </div>
+            <div id="dodatni-tekst-racun">
+                <h3>Dodatni tekst računa</h3>
+                <label for="zacetni-text-racun">Začetni tekst</label>
+                <textarea id="zacetni-text-racun" rows="3" cols="50">Na osnovi pogodbe/naročila vam zaračunavam avtorsko delo iz neodvisnega samostojnega opravljanja dejavnosti po 46. členu Zdoh-2L.</textarea><br>
+                <label for="zakljucni-text-racun">Zaključni tekst</label>
+                <textarea id="zakljucni-text-racun" rows="3" cols="50">DDV po 1. odstavku 94. člena ZDDV-1 ni obračunan.</textarea><br>
+                <label for="vpis-mziks-racun">Številka vpisa v razvid MZIKŠ</label>
+                <input type="text" id="vpis-mziks-racun" value="1234"><br>
+            </div>
+        </form>
+        <button type="button" id="submit" onclick="submitForm()"><a href="./invoice_template.html">Submit</a></button>
+        <br>
+        <br>
+    </main>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>

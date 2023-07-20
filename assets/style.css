@@ -1,0 +1,67 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: lightgray;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: 'Poiret One', cursive;
+    font-size: 3rem;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+h3 {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+#logo {
+    max-height: 2.2rem;
+}
+
+ul li {
+    display: inline;
+}
+
+header,
+#form {
+    display: grid;
+    padding-left: 20px;
+}
+
+form div {
+    display: inline-grid;
+}
+
+#podatki-izdajatelj {
+    padding-right: 20px;
+}
+
+#podatki-prejemnik {
+    padding-right: 20px;
+}
+
+#podatki-racun {
+    padding-right: 20px;
+}
+
+#dodatni-tekst-racuna {
+    min-width: 400px;
+}
+
+#submit {
+    width: 15rem;
+    padding: 10px;
+    margin: 20px auto;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    border: 0px solid;
+}
+
+#submit:hover {
+    background-color: rgb(117, 228, 253);
+}
